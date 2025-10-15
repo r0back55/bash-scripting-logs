@@ -95,13 +95,6 @@ Log analysis completed.
 
 The script is stateful in its report generation but runs idempotently (overwrites the report each time).
 
-## Potential Improvements
-
-- Add email notifications for warnings.
-- Support custom date ranges or file filters.
-- Integrate with cron for scheduled runs.
-- Handle large logs with pagination or streaming.
-
 ## Troubleshooting
 
 - **No files found**: Ensure `$LOG_DIR` exists and contains `.log` files updated recently. Test with `find $LOG_DIR -name "*.log" -mtime -1`.
